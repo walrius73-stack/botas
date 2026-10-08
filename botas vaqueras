@@ -78,20 +78,19 @@
 
     <script>
         function mostrarVideo() {
-            const inicio = document.getElementById("inicio");
-            const video = document.getElementById("video");
-
-            inicio.style.opacity = "0";
-
-            setTimeout(() => {
-                inicio.style.display = "none";
-                video.style.display = "block";
-                video.play();
-            }, 1000);
-        }
-    </script>
+    const inicio = document.getElementById("inicio");
+    const video = document.getElementById("video");
     const musica = document.getElementById("musica");
-musica.play();
+
+    musica.play();
+
+    inicio.style.opacity = "0";
+
+    setTimeout(() => {
+        inicio.style.display = "none";
+        video.style.display = "block";
+        video.play();
+    }, 1000);
 
 </body>
 </html>
