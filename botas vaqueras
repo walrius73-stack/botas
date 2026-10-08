@@ -72,6 +72,9 @@
         <source src="video.mp4" type="video/mp4">
         Tu navegador no puede reproducir este video.
     </video>
+<audio id="musica" loop>
+    <source src="cancion.mp3" type="audio/mpeg">
+</audio>
 
     <script>
         function mostrarVideo() {
