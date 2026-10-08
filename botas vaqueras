@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para ti ❤️</title>
+    <title>mi bella kamila ❤️</title>
 
     <style>
         * {
@@ -54,6 +54,9 @@
             display: none;
         }
     </style>
+    <audio id="musica" loop>
+    <source src="cancion.mp3" type="audio/mpeg">
+</audio>
 </head>
 
 <body>
@@ -61,7 +64,7 @@
     <div id="inicio" onclick="mostrarVideo()">
         <img src="imagen.jpg">
         <div id="mensaje">
-            Toca la pantalla ❤️
+            jeje hay algo aqui ❤️
         </div>
     </div>
 
@@ -84,6 +87,8 @@
             }, 1000);
         }
     </script>
+    const musica = document.getElementById("musica");
+musica.play();
 
 </body>
 </html>
