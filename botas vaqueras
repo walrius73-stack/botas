@@ -1,9 +1,10 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mi bella kamila ❤️</title>
+    <title>Para ti ❤️</title>
 
     <style>
         * {
@@ -12,7 +13,7 @@
 
         body {
             margin: 0;
-            background: #000;
+            background: black;
             height: 100vh;
             overflow: hidden;
             font-family: Arial, sans-serif;
@@ -22,11 +23,8 @@
             position: fixed;
             inset: 0;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: #000;
-            z-index: 10;
             cursor: pointer;
             transition: opacity 1s ease;
         }
@@ -54,43 +52,43 @@
             display: none;
         }
     </style>
-    <audio id="musica" loop>
-    <source src="cancion.mp3" type="audio/mpeg">
-</audio>
 </head>
 
 <body>
 
     <div id="inicio" onclick="mostrarVideo()">
-        <img src="imagen.jpg">
+        <img src="imagen.jpg" alt="Para ti">
         <div id="mensaje">
-            jeje hay algo aqui ❤️
+            Toca la pantalla ❤️
         </div>
     </div>
 
+    <audio id="musica" loop>
+        <source src="cancion.mp3" type="audio/mpeg">
+    </audio>
+
     <video id="video" controls>
         <source src="video.mp4" type="video/mp4">
-        Tu navegador no puede reproducir este video.
     </video>
-<audio id="musica" loop>
-    <source src="cancion.mp3" type="audio/mpeg">
-</audio>
 
     <script>
         function mostrarVideo() {
-    const inicio = document.getElementById("inicio");
-    const video = document.getElementById("video");
-    const musica = document.getElementById("musica");
+            const inicio = document.getElementById("inicio");
+            const video = document.getElementById("video");
+            const musica = document.getElementById("musica");
 
-    musica.play();
+            musica.play();
 
-    inicio.style.opacity = "0";
+            inicio.style.opacity = "0";
 
-    setTimeout(() => {
-        inicio.style.display = "none";
-        video.style.display = "block";
-        video.play();
-    }, 1000);
+            setTimeout(() => {
+                inicio.style.display = "none";
+                video.style.display = "block";
+                video.play();
+            }, 1000);
+        }
+    </script>
 
 </body>
 </html>
+```
